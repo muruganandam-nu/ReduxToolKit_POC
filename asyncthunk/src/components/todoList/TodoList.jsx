@@ -48,7 +48,7 @@ const TodoList = () => {
               key={todo.id}
               className="flex items-center justify-between py-2 border-b"
             >
-              <span>{todo.text}</span>
+              <span>{todo.title}</span>
               <button
                 onClick={() => handleDeleteTodo(todo.id)}
                 className="px-2 py-1 text-sm text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600"

@@ -1,23 +1,23 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchTodos = createAsyncThunk("todos/fetchTodos", async () => {
-  const response = await fetch("http://localhost:5000/todos");
+  const response = await fetch("http://localhost:8000/todos");
   return response.json();
 });
 
-export const addTodo = createAsyncThunk("todos/addTodo", async (text) => {
-  const response = await fetch("http://localhost:5000/todos", {
+export const addTodo = createAsyncThunk("todos/addTodo", async (title) => {
+  const response = await fetch("http://localhost:8000/todos", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ text }),
+    body: JSON.stringify({ title }),
   });
   return response.json();
 });
 
 export const deleteTodo = createAsyncThunk("todos/deleteTodo", async (id) => {
-  await fetch(`http://localhost:5000/todos/${id}`, {
+  await fetch(`http://localhost:8000/todos/${id}`, {
     method: "DELETE",
   });
   return id;
