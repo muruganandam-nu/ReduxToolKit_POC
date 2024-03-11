@@ -1,0 +1,12 @@
+{
+    "todos": [
+      {
+        "id": "2",
+        "text": "Learn Redux Toolkit"
+      },
+      {
+        "id": "3",
+        "text": "Implement JSON Server"
+      }
+    ]
+  }
