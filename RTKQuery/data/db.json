@@ -1,0 +1,12 @@
+{
+  "todos": [
+    {
+      "id": "1007",
+      "title": "Attend React session"
+    },
+    {
+      "id": "1005",
+      "title": "Play cricket"
+    }
+  ]
+}

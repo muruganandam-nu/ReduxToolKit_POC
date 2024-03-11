@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin:40px auto;
+
+}
+input{
+   padding: 10px 10px;
+   width: 40%;
+}
+.formgroup{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.todolist{
+    padding: 10px 20px ;
+    width: 30%;
+    margin: auto;
+    max-height: fit-content;
+    box-shadow:  1px 2px 3px 4px rgba(20,20,20,0.4)
+    ;
+}
+
+.todoitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding: 5px 15px;
+}
